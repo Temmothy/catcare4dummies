@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Cat Care 4 Dummies</title>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <link href="css/reset.css" rel="stylesheet" />
+   <link href="css/styles.css" rel="stylesheet" />
+   <link href="css/designs.css" rel="stylesheet" />
+
+   <style>
+      .question {
+         font-weight: bold;
+         cursor: pointer;
+         padding: 10px;
+         background-color: #f2f2f2;
+         border: 1px solid #ccc;
+         margin-top: 10px;
+         border-radius: 5px;
+      }
+
+      .answer {
+         display: none;
+         padding: 10px;
+         border: 1px solid #ddd;
+         border-top: none;
+         border-radius: 0 0 5px 5px;
+         background-color: #fafafa;
+      }
+
+      .faq-item.active .answer {
+         display: block;
+      }
+   </style>
+</head>
+
+<body>
+   <header>
+      <img src="images/catcare4dummies.png" alt="" id="logoImage" />
+      <nav id="top">
+         <ul>
+            <li><a href="Welcome.html">Welcome</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Beginner Information.html">Beginner Information</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
+            <li><a href="Contacts.html">Contacts</a></li>
+         </ul>
+      </nav>
+   </header>
+
+   <article>
+      <p>************************************************************************************************************</p>
+
+      <!-- FAQ Section -->
+      <div class="faq-item">
+         <div class="question">Q: At what age can I adopt a kitten?</div>
+         <div class="answer">A: Ideally, kittens should be at least 8 weeks old before adoption. This gives them time to be weaned and to learn important behaviors from their mother and siblings.</div>
+      </div>
+
+      <div class="faq-item">
+         <div class="question">Q: What’s the first thing I should do when I bring my kitten home?</div>
+         <div class="answer">A: Set up a safe, quiet space with their litter box, food, water, toys, and a comfy bed. Let them explore slowly and get used to the environment at their own pace.</div>
+      </div>
+
+      <div class="faq-item">
+         <div class="question">Q: How often should I feed my kitten?</div>
+         <div class="answer">A: Kittens under 6 months should eat 3–4 times a day. Use a high-quality kitten formula with plenty of protein and fat to support growth.</div>
+      </div>
+
+      <div class="faq-item">
+         <div class="question">Q: Can I give my kitten regular milk?</div>
+         <div class="answer">A: Nope! Cow’s milk can upset their stomach. Stick with clean water and kitten-specific milk replacer if they’re very young.</div>
+      </div>
+
+      <div class="faq-item">
+         <div class="question">Q: When should I take my kitten to the vet?</div>
+         <div class="answer">A: Within the first few days of bringing them home. The vet will check for any health issues, start vaccinations, and plan a wellness schedule.</div>
+      </div>
+
+      <div class="faq-item">
+         <div class="question">Q: What vaccinations do kittens need?</div>
+         <div class="answer">A: Core vaccines include FVRCP (feline viral rhinotracheitis, calicivirus, and panleukopenia) and rabies. Your vet will create a schedule based on age and health.</div>
+      </div>
+
+      <div class="faq-item">
+         <div class="question">Q: When should I spay or neuter my kitten?</div>
+         <div class="answer">A: Usually between 4 to 6 months, but your vet will give you the best timing based on your kitten’s development.</div>
+      </div>
+
+      <div class="faq-item">
+         <div class="question">Q: How do I litter train my kitten?</div>
+         <div class="answer">A: Most kittens naturally take to the litter box. Place them in it after meals or naps, and keep it clean. Use unscented, non-clumping litter at first.</div>
+      </div>
+
+      <div class="faq-item">
+         <div class="question">Q: How can I tell if my kitten is healthy?</div>
+         <div class="answer">A: Bright eyes, clean ears, steady weight gain, regular eating and pooping, and playful behavior are good signs. Any changes—like diarrhea or lethargy—should be checked by a vet.</div>
+      </div>
+
+      <div class="faq-item">
+         <div class="question">Q: Should I bathe my kitten?</div>
+         <div class="answer">A: Only if necessary. Most kittens clean themselves well. If they get into something messy, use a warm, damp cloth or a gentle kitten shampoo.</div>
+      </div>
+
+      <div class="faq-item">
+         <div class="question">Q: How do I introduce my kitten to other pets?</div>
+         <div class="answer">A: Slowly! Start with scent swapping, then visual introductions, and finally supervised interactions. Be patient—it can take days or even weeks.</div>
+      </div>
+
+      <p>************************************************************************************************************</p>
+   </article>
+
+   <footer>
+      <p>Cat Care 4 Dummies&copy; 2025 All Rights Reserved</p>
+   </footer>
+
+   <!-- JavaScript for FAQ toggle -->
+   <script>
+      document.querySelectorAll('.question').forEach(q => {
+         q.addEventListener('click', () => {
+            q.parentElement.classList.toggle('active');
+         });
+      });
+   </script>
+</body>
+</html>
